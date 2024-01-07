@@ -1,12 +1,12 @@
 name: Auto Api Task
 
-on: 
+on:
  release:
    types: [published]
  push:
    branches: 
      - master
-   schedule:
+ schedule:
    - cron: '12 */3 * * *'
  watch:
    types: [started]
